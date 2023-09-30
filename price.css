@@ -1,0 +1,92 @@
+.ribbon {
+    position: relative;
+    margin: 0 140px 0 50px;
+    display: inline-block;
+
+}
+
+.ribbon-text {
+    background-color: rgb(22, 175, 235);
+    width: 120px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: white;
+    position: absolute;
+    z-index: 2;
+}
+
+.ribbon-text::before {
+    position: absolute;
+    content: "   ";
+    border: 5px solid rgb(42, 73, 86);
+    border-left-color: transparent;
+    border-bottom-color: transparent;
+    bottom: -9px;
+    left: 0;
+
+}
+
+.ribbon-text::after {
+    position: absolute;
+    content: "   ";
+    border: 5px solid rgb(42, 73, 86);
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    bottom: -9px;
+    right: 0;
+}
+
+.ribbon-left {
+    display: inline-block;
+    border: 20px solid rgb(122, 216, 254);
+    border-left-color: transparent;
+    position: absolute;
+    top: 25px;
+    left: -30px;
+    z-index: 1;
+
+
+
+}
+
+.ribbon-right {
+    display: inline-block;
+    border: 20px solid rgb(122, 216, 254);
+    border-right-color: transparent;
+    position: absolute;
+    top: 25px;
+    right: -150px;
+    z-index: 1;
+}
+
+.box {
+    
+    width: 200px;
+    height: 200px;
+    line-height: 60px;
+    text-align: center;
+    /* background-image: conic-gradient(red 0deg, red 90deg, yellow 90deg, yellow 180deg, green 180deg, green 270deg, blue 270deg); */
+    /* background-image: conic-gradient(pink 0deg,pink 340deg,rgb(211, 206, 206) 30deg); */
+    background-image: conic-gradient(
+            green 0deg,
+            green 90deg,
+          red 90deg,
+          red 360deg,
+          green 170deg,
+          green 360deg
+        );
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+.title-box {
+    width: 150px;
+    height: 150px;
+    text-align: center;
+    background-color: white;
+    border-radius: 50%;
+}

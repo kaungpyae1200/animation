@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,300&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid black;
+    padding: 20px 50px;
+    position: fixed;
+    width: 100vw;
+    background-color: white;
+    z-index: ;
+
+
+
+}
+
+.header-brand {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    font-size: 1.4em;
+
+}
+
+.menu {}
+
+.nav-menu {
+    position: fixed;
+    width: 200px;
+    background-color: white;
+    border-left: 3px solid black;
+    height: 100vh;
+    top: 0;
+    right: 0;
+    padding: 80px 30px;
+    /* display: none; */
+    /* transform: translateY(100%); */
+    /* transform: ; */
+    transform: translateX(100%) scale(0);
+
+    transition: 500ms;
+}
+
+.menu-btn:focus+.nav-menu {
+    /* display: block; */
+    /* transform: ; */
+    transform: translateX(0) scale(1);
+
+}
+
+.dropdown {
+    display: inline-block;
+    position: relative;
+    /* right: 0; */
+    /* left: -100px; */
+
+}
+
+.dropdown-btn {
+    background-color: black;
+    color: white;
+    padding: 10px 10px;
+    border: none;
+
+}
+
+.dropdown-menu {
+    /* display: none; */
+    border: 2px solid black;
+    /* background-color: white; */
+    padding: 10px;
+    position: absolute;
+    /* right: -100px; */
+    top: 100%;
+    left: 0;
+    /* transform: translateX(30px); */
+    background-color: white;
+    width: 100px;
+    opacity: 0;
+    pointer-events: all;
+    transition: 500ms;
+    
+}
+.dropdown-btn:focus+.dropdown-menu{
+    opacity: 1;
+}
+
+.dropdown-link{
+    padding: 10px;
+    font-size:0.8em;
+    display: block;
+    text-decoration: none;
+    color: black;
+    right: -170px;
+
+
+
+
+}
+.dropdown-link.active{
+    background-color: black;
+    color: white;
+    
+}
+
+.nav-link {
+    display: block;
+    text-decoration: none;
+    color: black;
+    margin-bottom: 20px;
+    font-size: 1.3em;
+    font-weight: bold;
+
+
+}
+
+.menu-btn {
+    background: #000;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+}
+
+
+.box {
+    padding: 25px 50px;
+
+
+}
+
+.box p {
+    margin-bottom: 20px;
+
+}
+
+.header-spacer {
+    height: 100px;
+}
+
+.nav-link.active {
+    background-color: #ea2a2a;
+    color: white;
+    padding: 10px;
+}
